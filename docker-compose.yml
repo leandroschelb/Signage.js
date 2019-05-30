@@ -1,0 +1,10 @@
+version: "3.3"
+
+services:
+  server:
+    image: node:10-alpine
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/site
+    command: sh /site/script.sh 
